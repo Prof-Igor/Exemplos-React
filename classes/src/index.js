@@ -5,7 +5,12 @@ import App from './App';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <React.StrictMode>
+  <>
     <App nome="Igor" />
-  </React.StrictMode>
+    <button className="btn btn-outline-danger w-100 mt-2"
+      onClick={() =>
+        root.unmount()}>
+      Unmount
+    </button>
+  </>
 );
